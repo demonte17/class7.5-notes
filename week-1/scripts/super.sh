@@ -76,43 +76,43 @@ cat > /var/www/html/index.html <<EOF
 </head>
 <body>
   <div class="wrap">
-    <h1>⚡ SEIR-I Ops Panel — Node Online ⚡</h1>
+    <h1>&#9889; SEIR-I Ops Panel &mdash; Node Online &#9889;</h1>
     <div class="sub">If you can see this, you have deployed infrastructure that serves traffic on port 80.</div>
 
     <div class="grid">
       <div class="card">
         <div class="k">Identity</div>
-        <div class="big"><span class="k">Project:</span> <span class="v">\${PROJECT_ID}</span></div>
-        <div class="big"><span class="k">Instance:</span> <span class="v">\${INSTANCE_NAME}</span></div>
-        <div class="big"><span class="k">Hostname:</span> <span class="v">\${HOSTNAME}</span></div>
-        <div class="big"><span class="k">Machine:</span> <span class="v">\${MACHINE_TYPE}</span></div>
+        <div class="big"><span class="k">Project:</span> <span class="v">${PROJECT_ID}</span></div>
+        <div class="big"><span class="k">Instance:</span> <span class="v">${INSTANCE_NAME}</span></div>
+        <div class="big"><span class="k">Hostname:</span> <span class="v">${HOSTNAME}</span></div>
+        <div class="big"><span class="k">Machine:</span> <span class="v">${MACHINE_TYPE}</span></div>
       </div>
 
       <div class="card">
         <div class="k">Location</div>
-        <div class="big"><span class="k">Region:</span> <span class="v">\${REGION}</span></div>
-        <div class="big"><span class="k">Zone:</span> <span class="v">\${ZONE}</span></div>
-        <div class="big"><span class="k">Startup UTC:</span> <span class="v">\${START_TIME_UTC}</span></div>
-        <div class="big"><span class="k">Uptime:</span> <span class="v">\${UPTIME}</span></div>
+        <div class="big"><span class="k">Region:</span> <span class="v">${REGION}</span></div>
+        <div class="big"><span class="k">Zone:</span> <span class="v">${ZONE}</span></div>
+        <div class="big"><span class="k">Startup UTC:</span> <span class="v">${START_TIME_UTC}</span></div>
+        <div class="big"><span class="k">Uptime:</span> <span class="v">${UPTIME}</span></div>
       </div>
 
       <div class="card">
         <div class="k">Network</div>
-        <div class="big"><span class="k">VPC:</span> <span class="v">\${VPC}</span></div>
-        <div class="big"><span class="k">Subnet:</span> <span class="v">\${SUBNET}</span></div>
-        <div class="big"><span class="k">Internal IP:</span> <span class="v">\${INTERNAL_IP}</span></div>
-        <div class="big"><span class="k">External IP:</span> <span class="v">\${EXTERNAL_IP}</span></div>
+        <div class="big"><span class="k">VPC:</span> <span class="v">${VPC}</span></div>
+        <div class="big"><span class="k">Subnet:</span> <span class="v">${SUBNET}</span></div>
+        <div class="big"><span class="k">Internal IP:</span> <span class="v">${INTERNAL_IP}</span></div>
+        <div class="big"><span class="k">External IP:</span> <span class="v">${EXTERNAL_IP}</span></div>
       </div>
 
       <div class="card">
         <div class="k">Health</div>
         <div class="big"><span class="k">Nginx:</span>
           <!-- change 2 -->
-          <span class="v \${NGINX_CLASS}">\${NGINX_STATE}</span>
+          <span class="v ${NGINX_CLASS}">${NGINX_STATE}</span>
         </div>
-        <div class="big"><span class="k">Load Avg:</span> <span class="v">\${LOADAVG}</span></div>
-        <div class="big"><span class="k">RAM (MB):</span> <span class="v">\${MEM_USED_MB} used / \${MEM_FREE_MB} free / \${MEM_TOTAL_MB} total</span></div>
-        <div class="big"><span class="k">Disk (/):</span> <span class="v">\${DISK_USED} used / \${DISK_AVAIL} avail / \${DISK_SIZE} total (\${DISK_USEP})</span></div>
+        <div class="big"><span class="k">Load Avg:</span> <span class="v">${LOADAVG}</span></div>
+        <div class="big"><span class="k">RAM (MB):</span> <span class="v">${MEM_USED_MB} used / ${MEM_FREE_MB} free / ${MEM_TOTAL_MB} total</span></div>
+        <div class="big"><span class="k">Disk (/):</span> <span class="v">${DISK_USED} used / ${DISK_AVAIL} avail / ${DISK_SIZE} total (${DISK_USEP})</span></div>
       </div>
     </div>
 
