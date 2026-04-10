@@ -458,6 +458,8 @@ Breaking this down:
 
 No region or zone is specified in this resource block. When omitted, the Google provider uses the values set in the `provider` block in `auth.tf`.
 
+[Terraform registry page on Google VM resource](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance)
+
 ### Running the Workflow
 
 1. `terraform init`- required again since we added a provider. This downloads the Google provider binary into a `.terraform` directory and creates a `.terraform.lock.hcl` file recording which provider version was used.
