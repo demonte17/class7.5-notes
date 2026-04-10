@@ -36,7 +36,7 @@ The script checks the following:
 It will create the TheoWAF folder structure if needed and will download a `.gitignore` file configured for Terraform projects.
 
 ```bash
-curl <script> | sh
+curl https://raw.githubusercontent.com/aaron-dm-mcdonald/class7.5-notes/refs/heads/main/week-4/prep/scripts/prelim.sh | sh
 ```
 
 ---
